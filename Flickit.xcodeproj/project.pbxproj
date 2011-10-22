@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9312F9F113E3308E00DCF575 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9312F9F013E3308E00DCF575 /* UIKit.framework */; };
+		9312F9F313E3308E00DCF575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9312F9F213E3308E00DCF575 /* Foundation.framework */; };
+		9312F9F513E3308E00DCF575 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9312F9F413E3308E00DCF575 /* CoreGraphics.framework */; };
+		9312F9F713E3308E00DCF575 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9312F9F613E3308E00DCF575 /* CoreData.framework */; };
+		9312F9FD13E3308E00DCF575 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9312F9FB13E3308E00DCF575 /* InfoPlist.strings */; };
+		9312FA0013E3308E00DCF575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312F9FF13E3308E00DCF575 /* main.m */; };
+		9312FA0313E3308E00DCF575 /* FlickerPlacesCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA0213E3308E00DCF575 /* FlickerPlacesCDAppDelegate.m */; };
+		9312FA0613E3308E00DCF575 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9312FA0413E3308E00DCF575 /* MainWindow.xib */; };
+		9312FA0913E3308E00DCF575 /* FlickerPlacesCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA0713E3308E00DCF575 /* FlickerPlacesCD.xcdatamodeld */; };
+		9312FA1513E3315300DCF575 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA1113E3315300DCF575 /* CoreDataTableViewController.m */; };
+		9312FA1613E3315300DCF575 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA1413E3315300DCF575 /* FlickrFetcher.m */; };
+		9312FA2513E3317800DCF575 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA1A13E3317800DCF575 /* NSObject+SBJSON.m */; };
+		9312FA2613E3317800DCF575 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA1C13E3317800DCF575 /* NSString+SBJSON.m */; };
+		9312FA2713E3317800DCF575 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA1E13E3317800DCF575 /* SBJSON.m */; };
+		9312FA2813E3317800DCF575 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA2013E3317800DCF575 /* SBJsonBase.m */; };
+		9312FA2913E3317800DCF575 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA2213E3317800DCF575 /* SBJsonParser.m */; };
+		9312FA2A13E3317800DCF575 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312FA2413E3317800DCF575 /* SBJsonWriter.m */; };
+		9341C8C213EC3E9400DC7E38 /* RecentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9341C8C113EC3E9400DC7E38 /* RecentTableViewController.m */; };
+		934CE0FC13EAD68500923C53 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934CE0FB13EAD68500923C53 /* PhotoTableViewController.m */; };
+		93704B0A13E87CCD0038F084 /* PlaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93704B0813E87CCD0038F084 /* PlaceTableViewController.m */; };
+		9F1F094214531D0A00882B1C /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F093914531D0A00882B1C /* Facebook.m */; };
+		9F1F094314531D0A00882B1C /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F1F093B14531D0A00882B1C /* FBDialog.bundle */; };
+		9F1F094414531D0A00882B1C /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F093D14531D0A00882B1C /* FBDialog.m */; };
+		9F1F094514531D0A00882B1C /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F093F14531D0A00882B1C /* FBLoginDialog.m */; };
+		9F1F094614531D0A00882B1C /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F094114531D0A00882B1C /* FBRequest.m */; };
+		9FD25AFE13E4912B00E4CD60 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD25AFD13E4912B00E4CD60 /* Photo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9312F9EC13E3308E00DCF575 /* Flickit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9312F9F013E3308E00DCF575 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9312F9F213E3308E00DCF575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9312F9F413E3308E00DCF575 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9312F9F613E3308E00DCF575 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9312F9FA13E3308E00DCF575 /* Flickit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flickit-Info.plist"; sourceTree = "<group>"; };
+		9312F9FC13E3308E00DCF575 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9312F9FE13E3308E00DCF575 /* Flickit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flickit-Prefix.pch"; sourceTree = "<group>"; };
+		9312F9FF13E3308E00DCF575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9312FA0113E3308E00DCF575 /* FlickerPlacesCDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickerPlacesCDAppDelegate.h; sourceTree = "<group>"; };
+		9312FA0213E3308E00DCF575 /* FlickerPlacesCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickerPlacesCDAppDelegate.m; sourceTree = "<group>"; };
+		9312FA0513E3308E00DCF575 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9312FA0813E3308E00DCF575 /* FlickerPlacesCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlickerPlacesCD.xcdatamodel; sourceTree = "<group>"; };
+		9312FA1013E3315300DCF575 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		9312FA1113E3315300DCF575 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		9312FA1213E3315300DCF575 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		9312FA1313E3315300DCF575 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		9312FA1413E3315300DCF575 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		9312FA1813E3317800DCF575 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		9312FA1913E3317800DCF575 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		9312FA1A13E3317800DCF575 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		9312FA1B13E3317800DCF575 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		9312FA1C13E3317800DCF575 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		9312FA1D13E3317800DCF575 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		9312FA1E13E3317800DCF575 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		9312FA1F13E3317800DCF575 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		9312FA2013E3317800DCF575 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		9312FA2113E3317800DCF575 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		9312FA2213E3317800DCF575 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		9312FA2313E3317800DCF575 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		9312FA2413E3317800DCF575 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		9341C8C013EC3E9400DC7E38 /* RecentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentTableViewController.h; sourceTree = "<group>"; };
+		9341C8C113EC3E9400DC7E38 /* RecentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentTableViewController.m; sourceTree = "<group>"; };
+		934CE0FA13EAD68500923C53 /* PhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
+		934CE0FB13EAD68500923C53 /* PhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewController.m; sourceTree = "<group>"; };
+		93704B0713E87CCD0038F084 /* PlaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTableViewController.h; sourceTree = "<group>"; };
+		93704B0813E87CCD0038F084 /* PlaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTableViewController.m; sourceTree = "<group>"; };
+		9F1F093814531CF800882B1C /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facebook.h; path = "../../Facebook/facebook-ios-sdk/src/Facebook.h"; sourceTree = "<group>"; };
+		9F1F093914531D0A00882B1C /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facebook.m; path = "../../Facebook/facebook-ios-sdk/src/Facebook.m"; sourceTree = "<group>"; };
+		9F1F093A14531D0A00882B1C /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = "../../Facebook/facebook-ios-sdk/src/FBConnect.h"; sourceTree = "<group>"; };
+		9F1F093B14531D0A00882B1C /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBDialog.bundle; path = "../../Facebook/facebook-ios-sdk/src/FBDialog.bundle"; sourceTree = "<group>"; };
+		9F1F093C14531D0A00882B1C /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBDialog.h; path = "../../Facebook/facebook-ios-sdk/src/FBDialog.h"; sourceTree = "<group>"; };
+		9F1F093D14531D0A00882B1C /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBDialog.m; path = "../../Facebook/facebook-ios-sdk/src/FBDialog.m"; sourceTree = "<group>"; };
+		9F1F093E14531D0A00882B1C /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginDialog.h; path = "../../Facebook/facebook-ios-sdk/src/FBLoginDialog.h"; sourceTree = "<group>"; };
+		9F1F093F14531D0A00882B1C /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginDialog.m; path = "../../Facebook/facebook-ios-sdk/src/FBLoginDialog.m"; sourceTree = "<group>"; };
+		9F1F094014531D0A00882B1C /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRequest.h; path = "../../Facebook/facebook-ios-sdk/src/FBRequest.h"; sourceTree = "<group>"; };
+		9F1F094114531D0A00882B1C /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRequest.m; path = "../../Facebook/facebook-ios-sdk/src/FBRequest.m"; sourceTree = "<group>"; };
+		9FD25AFC13E4912B00E4CD60 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		9FD25AFD13E4912B00E4CD60 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9312F9E913E3308E00DCF575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312F9F113E3308E00DCF575 /* UIKit.framework in Frameworks */,
+				9312F9F313E3308E00DCF575 /* Foundation.framework in Frameworks */,
+				9312F9F513E3308E00DCF575 /* CoreGraphics.framework in Frameworks */,
+				9312F9F713E3308E00DCF575 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9312F9E113E3308E00DCF575 = {
+			isa = PBXGroup;
+			children = (
+				9312FA0F13E3313200DCF575 /* Resouces */,
+				9312F9F813E3308E00DCF575 /* FlickerPlacesCD */,
+				9312F9EF13E3308E00DCF575 /* Frameworks */,
+				9312F9ED13E3308E00DCF575 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9312F9ED13E3308E00DCF575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9312F9EC13E3308E00DCF575 /* Flickit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9312F9EF13E3308E00DCF575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9312F9F013E3308E00DCF575 /* UIKit.framework */,
+				9312F9F213E3308E00DCF575 /* Foundation.framework */,
+				9312F9F413E3308E00DCF575 /* CoreGraphics.framework */,
+				9312F9F613E3308E00DCF575 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9312F9F813E3308E00DCF575 /* FlickerPlacesCD */ = {
+			isa = PBXGroup;
+			children = (
+				9312FA0113E3308E00DCF575 /* FlickerPlacesCDAppDelegate.h */,
+				9312FA0213E3308E00DCF575 /* FlickerPlacesCDAppDelegate.m */,
+				93704B0713E87CCD0038F084 /* PlaceTableViewController.h */,
+				93704B0813E87CCD0038F084 /* PlaceTableViewController.m */,
+				934CE0FA13EAD68500923C53 /* PhotoTableViewController.h */,
+				934CE0FB13EAD68500923C53 /* PhotoTableViewController.m */,
+				9341C8C013EC3E9400DC7E38 /* RecentTableViewController.h */,
+				9341C8C113EC3E9400DC7E38 /* RecentTableViewController.m */,
+				9FD25AFC13E4912B00E4CD60 /* Photo.h */,
+				9FD25AFD13E4912B00E4CD60 /* Photo.m */,
+				9312F9F913E3308E00DCF575 /* Supporting Files */,
+			);
+			path = FlickerPlacesCD;
+			sourceTree = "<group>";
+		};
+		9312F9F913E3308E00DCF575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9312F9FA13E3308E00DCF575 /* Flickit-Info.plist */,
+				9312F9FB13E3308E00DCF575 /* InfoPlist.strings */,
+				9312F9FE13E3308E00DCF575 /* Flickit-Prefix.pch */,
+				9312FA0413E3308E00DCF575 /* MainWindow.xib */,
+				9312FA0713E3308E00DCF575 /* FlickerPlacesCD.xcdatamodeld */,
+				9312F9FF13E3308E00DCF575 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9312FA0F13E3313200DCF575 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				9F1F0936145317C600882B1C /* Facebook */,
+				9312FA1713E3317800DCF575 /* JSON */,
+				9312FA1013E3315300DCF575 /* CoreDataTableViewController.h */,
+				9312FA1113E3315300DCF575 /* CoreDataTableViewController.m */,
+				9312FA1213E3315300DCF575 /* FlickrAPIKey.h */,
+				9312FA1313E3315300DCF575 /* FlickrFetcher.h */,
+				9312FA1413E3315300DCF575 /* FlickrFetcher.m */,
+			);
+			name = Resouces;
+			path = FlickerPlacesCD;
+			sourceTree = "<group>";
+		};
+		9312FA1713E3317800DCF575 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9312FA1813E3317800DCF575 /* JSON.h */,
+				9312FA1913E3317800DCF575 /* NSObject+SBJSON.h */,
+				9312FA1A13E3317800DCF575 /* NSObject+SBJSON.m */,
+				9312FA1B13E3317800DCF575 /* NSString+SBJSON.h */,
+				9312FA1C13E3317800DCF575 /* NSString+SBJSON.m */,
+				9312FA1D13E3317800DCF575 /* SBJSON.h */,
+				9312FA1E13E3317800DCF575 /* SBJSON.m */,
+				9312FA1F13E3317800DCF575 /* SBJsonBase.h */,
+				9312FA2013E3317800DCF575 /* SBJsonBase.m */,
+				9312FA2113E3317800DCF575 /* SBJsonParser.h */,
+				9312FA2213E3317800DCF575 /* SBJsonParser.m */,
+				9312FA2313E3317800DCF575 /* SBJsonWriter.h */,
+				9312FA2413E3317800DCF575 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9F1F0936145317C600882B1C /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				9F1F093914531D0A00882B1C /* Facebook.m */,
+				9F1F093A14531D0A00882B1C /* FBConnect.h */,
+				9F1F093B14531D0A00882B1C /* FBDialog.bundle */,
+				9F1F093C14531D0A00882B1C /* FBDialog.h */,
+				9F1F093D14531D0A00882B1C /* FBDialog.m */,
+				9F1F093E14531D0A00882B1C /* FBLoginDialog.h */,
+				9F1F093F14531D0A00882B1C /* FBLoginDialog.m */,
+				9F1F094014531D0A00882B1C /* FBRequest.h */,
+				9F1F094114531D0A00882B1C /* FBRequest.m */,
+				9F1F093814531CF800882B1C /* Facebook.h */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9312F9EB13E3308E00DCF575 /* Flickit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9312FA0C13E3308E00DCF575 /* Build configuration list for PBXNativeTarget "Flickit" */;
+			buildPhases = (
+				9312F9E813E3308E00DCF575 /* Sources */,
+				9312F9E913E3308E00DCF575 /* Frameworks */,
+				9312F9EA13E3308E00DCF575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flickit;
+			productName = FlickerPlacesCD;
+			productReference = 9312F9EC13E3308E00DCF575 /* Flickit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9312F9E313E3308E00DCF575 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9312F9E613E3308E00DCF575 /* Build configuration list for PBXProject "Flickit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9312F9E113E3308E00DCF575;
+			productRefGroup = 9312F9ED13E3308E00DCF575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9312F9EB13E3308E00DCF575 /* Flickit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9312F9EA13E3308E00DCF575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312F9FD13E3308E00DCF575 /* InfoPlist.strings in Resources */,
+				9312FA0613E3308E00DCF575 /* MainWindow.xib in Resources */,
+				9F1F094314531D0A00882B1C /* FBDialog.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9312F9E813E3308E00DCF575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9312FA0013E3308E00DCF575 /* main.m in Sources */,
+				9312FA0313E3308E00DCF575 /* FlickerPlacesCDAppDelegate.m in Sources */,
+				9312FA0913E3308E00DCF575 /* FlickerPlacesCD.xcdatamodeld in Sources */,
+				9312FA1513E3315300DCF575 /* CoreDataTableViewController.m in Sources */,
+				9312FA1613E3315300DCF575 /* FlickrFetcher.m in Sources */,
+				9312FA2513E3317800DCF575 /* NSObject+SBJSON.m in Sources */,
+				9312FA2613E3317800DCF575 /* NSString+SBJSON.m in Sources */,
+				9312FA2713E3317800DCF575 /* SBJSON.m in Sources */,
+				9312FA2813E3317800DCF575 /* SBJsonBase.m in Sources */,
+				9312FA2913E3317800DCF575 /* SBJsonParser.m in Sources */,
+				9312FA2A13E3317800DCF575 /* SBJsonWriter.m in Sources */,
+				9FD25AFE13E4912B00E4CD60 /* Photo.m in Sources */,
+				93704B0A13E87CCD0038F084 /* PlaceTableViewController.m in Sources */,
+				934CE0FC13EAD68500923C53 /* PhotoTableViewController.m in Sources */,
+				9341C8C213EC3E9400DC7E38 /* RecentTableViewController.m in Sources */,
+				9F1F094214531D0A00882B1C /* Facebook.m in Sources */,
+				9F1F094414531D0A00882B1C /* FBDialog.m in Sources */,
+				9F1F094514531D0A00882B1C /* FBLoginDialog.m in Sources */,
+				9F1F094614531D0A00882B1C /* FBRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9312F9FB13E3308E00DCF575 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9312F9FC13E3308E00DCF575 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9312FA0413E3308E00DCF575 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9312FA0513E3308E00DCF575 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9312FA0A13E3308E00DCF575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9312FA0B13E3308E00DCF575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9312FA0D13E3308E00DCF575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickerPlacesCD/Flickit-Prefix.pch";
+				INFOPLIST_FILE = "FlickerPlacesCD/Flickit-Info.plist";
+				PRODUCT_NAME = Flickit;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9312FA0E13E3308E00DCF575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickerPlacesCD/Flickit-Prefix.pch";
+				INFOPLIST_FILE = "FlickerPlacesCD/Flickit-Info.plist";
+				PRODUCT_NAME = Flickit;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9312F9E613E3308E00DCF575 /* Build configuration list for PBXProject "Flickit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9312FA0A13E3308E00DCF575 /* Debug */,
+				9312FA0B13E3308E00DCF575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9312FA0C13E3308E00DCF575 /* Build configuration list for PBXNativeTarget "Flickit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9312FA0D13E3308E00DCF575 /* Debug */,
+				9312FA0E13E3308E00DCF575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9312FA0713E3308E00DCF575 /* FlickerPlacesCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9312FA0813E3308E00DCF575 /* FlickerPlacesCD.xcdatamodel */,
+			);
+			currentVersion = 9312FA0813E3308E00DCF575 /* FlickerPlacesCD.xcdatamodel */;
+			path = FlickerPlacesCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9312F9E313E3308E00DCF575 /* Project object */;
+}
